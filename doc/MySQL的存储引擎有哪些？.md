@@ -1,0 +1,1 @@
+MySQL 的存储引擎有 InnoDB，MyISAM，Memory。
