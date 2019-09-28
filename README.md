@@ -4,7 +4,7 @@
 
 ### 索引
 
-- [索引的模型有哪些，各有什么优劣？](https://github.com/oscarwin/interview/blob/master/tree/master/doc/索引的模型有哪些，各有什么优劣？.md)
+- [索引的模型有哪些，各有什么优劣？](https://github.com/oscarwin/interview/blob/master/doc/索引的模型有哪些，各有什么优劣？.md)
 
 - [B 树与 B+ 树有哪些区别？]()
 
@@ -20,21 +20,21 @@
 
 - [UUID 可不可以做主键，有什么优劣？]()
 
-- [索引在什么情况下会失效？](https://github.com/oscarwin/awesome-learning-tutorials/tree/master/doc/索引在什么情况下会失效？.md)
+- [索引在什么情况下会失效？](https://github.com/oscarwin/interview/blob/master/doc/索引在什么情况下会失效？.md)
 
 ### 存储引擎
 
 - MySQL 的存储引擎有哪些？
 
-- InnoDB 与 MyIsam 有哪些区别，如何选择？
+- [InnoDB 与 MyIsam 有哪些区别，如何选择？](https://github.com/oscarwin/interview/blob/master/doc/InnoDB与MyIsam有哪些区别，如何选择？.md)
 
 ### 主从同步
 
-- [MySQL 主从同步原理是什么？](https://github.com/oscarwin/awesome-learning-tutorials/tree/master/doc/MySQL主从同步原理是什么？.md)
+- [MySQL 主从同步原理是什么？](https://github.com/oscarwin/interview/blob/master/doc/MySQL主从同步原理是什么？.md)
 
-- [假设现在已经是一主一从，现在要再加入一台从机该怎么操作？](https://github.com/oscarwin/awesome-learning-tutorials/tree/master/doc/假设现在已经是一主一从，现在要再加入一台从机该怎么操作？.md)
+- [假设现在已经是一主一从，现在要再加入一台从机该怎么操作？](https://github.com/oscarwin/interview/blob/master/doc/假设现在已经是一主一从，现在要再加入一台从机该怎么操作？.md)
 
-- [MySQL如何传输二进制日志，是主库推，还是从库拉？](https://github.com/oscarwin/awesome-learning-tutorials/tree/master/doc/MySQL如何传输二进制日志，是主库推，还是从库拉？.md)
+- [MySQL如何传输二进制日志，是主库推，还是从库拉？](https://github.com/oscarwin/interview/blob/master/doc/MySQL如何传输二进制日志，是主库推，还是从库拉？.md)
 
 - [MySQL的数据如何恢复到任意时间点？]()
 
@@ -46,161 +46,62 @@
 
 ## Redis
 
-### 持久化
-
 - [Redis 持久化有哪几种方案？如何选择？]()
-
-### 主从同步
 
 - [Redis 主从同步实现原理？]()
 
-### 数据结构
-
 - [Redis 的 ZSET 用哪种数据结构实现的？]()
 
-### 哨兵与集群
-
 - [Redis 哨兵和集群分别怎么实现？]()
-
-### 其他
 
 - [Redis Key 的过期策略？]()
 
 ## 消息队列
 
-- [消息队列的作用]()
+- [消息队列的作用](https://github.com/oscarwin/interview/blob/master/doc/消息队列的作用.md)
 
-- [消息积压如何应对？]()
+- [消息队列如何选型？](https://github.com/oscarwin/interview/blob/master/doc/消息队列如何选型？.md)
 
-- [Kafka 中 publisher, subscriber, topic, broker, partition，producer, consumer, consumer group 分别指什么？]()
+- [消息队列如何保证不丢消息？](https://github.com/oscarwin/interview/blob/master/doc/消息队列如何保证不丢消息？.md)
 
-Broker：是 kafka 服务器进程的代名词，可以分布在同一台机器上，也可以分布在多台机器上；
+- [消息积压如何应对？](https://github.com/oscarwin/interview/blob/master/doc/消息积压如何应对？.md)
 
-Topic：是发布和订阅的对象，是用来承载消息的逻辑容器；
+- [Kafka 中 publisher, subscriber, topic, broker, partition，producer, consumer, consumer group 分别指什么？](https://github.com/oscarwin/interview/blob/master/doc/Kafka%E4%B8%AD%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D%E8%A7%A3%E6%9E%90.md)
 
-Partition：分区，一个 Topic 可以有多个分区，用来承载更大的 QPS；
-
-Producer：生产者，也就是发布者(publisher)，向 Topic 写入数据消息；
-
-Consumer：消费者，也就是订阅者(subscriber)，订阅一个 Topic，消费其中的消息；
-
-Consumer group：消费者组，一个消费者组里可以有多个消费者，这多个消费者共同消费一份消息，这些消费者同时消费多个分区提高吞吐。
-
-Replica：副本，kafka 中同一条消息能够被拷贝到多个地方提供冗余，副本分为领导者副本和追随者副本。
-
-## Kafka 选主算法？
+- [Kafka 选主算法？]()
 
 ## TCP/IP
 
-## TCP与UDP的区别
+- [TCP与UDP的区别](https://github.com/oscarwin/interview/blob/master/doc/TCP与UDP的区别.md)
 
-1 TCP基于有连接，UDP基于无连接。有连接就是TCP在传输前先发送连接请求和应答包，确定双方能够正常传输后，才开始进行数据传输。无连接就是UDP在发送数据之前，并不考虑对方能否接受到，甚至目的地址可能都是无效。
+- [TCP 的三次握手和四次挥手过程是怎样的？为什么是三次和四次？]()
 
-2 TCP能保证可靠传输，UDP不能保证可靠传输TCP。所谓可靠就是TCP能保证把数据一定送到目的地址。为了实现可靠，TCP采用有连接的，超时重传，应答机制等。而UDP则没有这些，也不能保证数据一定能送到。但是这些机制导致TCP非常繁重，不如UDP使用起来方便，所以有一些场景下会基于UDP在应用层来实现可靠传输。
+- [TIME_WAIT 状态的作用？等待时间是多少？](https://github.com/oscarwin/interview/blob/master/doc/TIME_WAIT状态的作用？等待时间是多少？.md)
 
-3 TCP结构复杂，消耗资源多，建立过程较慢较复杂。UDP结构简单，消耗资源少，建立过程较快。
+- [多个程序可以绑定同一个端口吗？会发生什么？]()
 
-4 TCP基于流模式，UDP是数据报模式。TCP把数据看成一连串无结构的字节流，没有边界，一段段传输构成了整个数据块。通过发送缓冲区和接受缓冲区来存储数据流。而UDP数据报模式，每一个数据报都是一个独立的对象，有着指定的大小。
-
-5 TCP连接只能是点到点，而UDP可以一对一，一对多或者多对多。TCP只能是点到点原因很简单，因为TCP的传输前要先建立连接。因此，广播和多播只能采用UDP数据报的方式。
-
-6 TCP有确认，重传，拥赛控制机制，UDP在没有建立连接或者对方已经退出的情况下任然会继续发送数据，导致通信流量的浪费。
-
-### TCP 的三次握手和四次挥手过程是怎样的？为什么是三次和四次？
-
-### TIME_WAIT 状态的作用？等待时间是多少？
-
-TIME_WAIT 出现的主动发起的一端，TIME_WAIT 的作用是为了防止最后一个 ACK 包丢失，留下充分的时间让对端进行重传。因此 TIME_WAIT 等待的时长是 2TTL。TTL 是一个数据包在网络中停留的最长时间。
-
-
-### 多个程序可以绑定同一个端口吗？会发生什么？
-
-
-### select 和 epoll 的区别？
+- [select 和 epoll 的区别？]()
 
 ## HTTP/HTTPS
 
-### HTTP 和 HTTPS 的区别？
+- [HTTP 和 HTTPS 的区别？](https://github.com/oscarwin/interview/blob/master/doc/HTTP和HTTPS的区别？.md)
 
-### HTTP 返回码？请求头的结构？请求方法？哪些是幂等的？
+- [HTTP 返回码？请求头的结构？请求方法？哪些是幂等的？](https://github.com/oscarwin/interview/blob/master/doc/HTTP返回码？请求头的结构？请求方法？哪些是幂等的？)
 
-### HTTPS 如何加密的？
+- [HTTPS 如何加密的？](https://github.com/oscarwin/interview/blob/master/doc/HTTPS如何加密的？.md)
 
-### Get 和 Post 的区别？
+- [GET 和 POST 的区别？](https://github.com/oscarwin/interview/blob/master/doc/GET和POST的区别？.md)
 
-1 get重点在从服务器上获取资源，post重点在向服务器发送数据。如果RESTful风格的接口，对于同一个url而言，get和post一个进行读操作，一个进行写操作。
+## 操作系统
 
-2 get传输数据是通过URL请求，以field（字段）= value的形式，置于URL后，并用"?"连接，多个请求数据间用"&"连接，如http://127.0.0.1/Test/login.action?name=admin&password=admin。
-post传输数据通过Http的post机制，将字段与对应值封存在请求实体中发送给服务器，可以使用纯文本，也可以使用json等格式。
+- [进程与线程的区别？](https://github.com/oscarwin/interview/blob/master/doc/进程与线程的区别？.md)
 
-3 get传输的数据量小，因为受URL长度限制，但效率较高。post可以传输大量数据，所以上传文件时只能用Post方式。
+- [多进程程序与多线程程序的选择](https://github.com/oscarwin/interview/blob/master/doc/多进程程序与多线程程序的选择？.md)
 
-4 get请求中，URL将参数完全暴露给用户。而post请求将参数放在请求头中，相对而言更加安全一些。
+- [什么是孤儿进程？什么是僵尸进程？如何找出系统中的僵尸进程？](https://github.com/oscarwin/interview/blob/master/doc/什么是孤儿进程？什么是僵尸进程？如何找出系统中的僵尸进程？.md)
 
-5 对于跨域的问题。jsonp可以解决get请求跨域的问题，而post请求不能通过jsonp来解决跨域。CORS(Cross-origin resource sharing 跨域资源共享)可以同时解决get和post的跨域问题。
+- [多线程fork后，子进程中线程的数量与父进程的线程数量相同吗？](https://github.com/oscarwin/interview/blob/master/doc/多线程fork后，子进程中线程的数量与父进程的线程数量相同吗？.md)
 
+## 系统设计题
 
-## 进程与线程的区别
-
-1. 进程是资源分配的基本单位。线程是cpu调度的最小单位，或者说是程序执行的最小单位。
-
-2. 进程有独立的地址空间，而同一进程中的线程共享同一个进程的地址空间。比如在linux下面启动一个新的进程，系统必须分配给它独立的地址空间，建立众多的数据表来维护它的代码段、堆栈段和数据段，这是一种非常昂贵的多任务工作方式。而运行一个进程中的线程，它们之间共享大部分数据，使用相同的地址空间，因此启动一个线程，切换一个线程远比进程操作要快，花费也要小得多。当然，线程是拥有自己的寄存器和堆栈（线程栈），比如在windows中用_beginthreadex创建一个新进程就会在调用CreateThread的同时申请一个专属于线程的数据块（_tiddata)。线程有自己线程栈，线程可以直接访问全局变量，甚至可以访问进程地址空间中的每一个内存，所以一个线程可以读写甚至清除另一个线程的堆栈。
-
-3. 线程之间的通信比较方便。统一进程下的线程共享数据（比如全局变量，静态变量，打开的文件描述符），通过这些数据来通信不仅快捷而且方便，当然如何处理好共享资源的同步与互斥正是编写多线程程序的难点之一。而进程之间的通信需要通过单独的进程间通信的方式进行。在一个线程中分配的堆在各个线程中均可以使用，在一个线程中打开的文件各个线程均可用，当然指同一进程中的线程。
-
-4. 多进程程序比多线程程序要健壮。对于多线程程序，一个线程崩溃(比如访问越界导致core dump)会导致整个进程挂掉，如果只有一个进程在提供服务，那么无法对外提供服务。而多进程之前不会相互影响，一个进程死掉对另一个进程没有直接影响，一个进程崩溃后其他的进程仍然可以继续提供服务。
-
-5. 线程的执行与进程是有区别的。每个独立的线程有有自己的一个程序入口，顺序执行序列和程序的出口，但是线程不能独立执行，必须依附与程序之中，由应用程序提供多个线程的并发控制。
-
-6. linux中进程具有父子关系，形成进程树，但是线程是平等的没有父子关系。
-
-## 多进程与多线程的选择
-
-1. 多线程比多进程要轻量，对于并发要求较高，那么优先应该选择多线程程序。
-
-2. 多进程比多线程要健壮，如果要保证服务的高可用，可以考虑多进程。当然，后端服务往往是通过分布式来实现高可用。
-
-3. 多线程数据共享更加方便，因此如果要共享大量的数据和资源，优先应该考虑多线程程序。
-
-## 孤儿进程和僵尸进程
-
-**孤儿进程：** 在多进程程序中，如果父进程比子进程先终止，那么子进程就会变成孤儿进程，孤儿进程会被init进程(pid为1)收养，也就是说init进程是所有孤儿进程的父进程。
-
-**僵尸进程：** 在多进程程序中，如果子进程比父进程先终止，但是父进程没有调用wait或者waitpid来释放子进程的资源，那么这个子进程就变成了僵尸进程。
-
-僵尸会占用系统资源，应该尽量避免僵尸进程的产生。
-
-如何查找僵尸进程： ps -aux 打印所有进程状态，进程状态 stat 为 z 的说明是僵尸进程。
-
-## 多线程 fork 的问题
-
-1. 如果一个多线程程序的某个线程调用了fork函数，那么新创建的子进程是否将自动创建和父进程相同数量的线程呢？
-
-参考答案：否。子进程只拥有一个执行线程，它是调用fork的那个线程的完整复制。并且子进程将自动继承父进程中互斥锁（条件变量与之类似）的状态。也就是说，父进程中已经被加锁的互斥锁在子进程中也是被锁住的
-
-
-2. 多线程 fork 如何造成死锁？
-  
-参考答案：子进程可能不清楚从父进程继承而来的互斥锁的具体状态（是加锁还是解锁状态），这个互斥锁可能被加锁了，但是并不是由调用fork函数的那个线程锁住的，而是由其他线程锁住的。如果是这种情况，则子进程若再次对该互斥锁执行加锁操作就会导致死锁。确保fork调用后父进程和子进程都拥有一个清楚的锁状态的函数。
-
-## x系统涉及题
-
-## 请解释下为什么鹿晗发布恋情的时候，微博系统会崩溃，如何解决？
-
-**为什么会崩溃？**
-
-因为明星效应，鹿晗发布微博后，有大量的用户在同一个时间段内都会搜索这一条微博。首先发布的微博会写入到DB中，如果全部查询DB肯定把MySQL打挂了，所以会做一层缓存，鹿晗发布的微博会写在缓存里，大量的用户会查询这个缓存数据。
-
-缓存也不是银弹，也可能会存在几个问题可能导致服务崩溃：
-
-(1) 缓存击穿。缓存失效时，这一瞬间所有的请求都会打到DB上，直接导致DB处理不过来而崩溃，从而导致整个服务崩溃。
-
-(2) 热点数据。所有的用户都查询的是鹿晗发布的这一条微博，也就是都要命中缓存中的同一个KEY。所有请求都会路由到同一台缓存机器上，过大的并发导致机器宕机。
-
-**怎么解决？**
-
-缓存击穿：加锁
-
-热点数据：通过大数据流式计算自动发现热点数据，将发现的热点数据上报配置中心，业务方根据配置中的热点数据信息，分配多个实例存储热点KEY
-
-可以查看这篇博客：[缓存设计与常见问题分析](https://juejin.im/post/5cefc871518825767072bfe1)
+- [请解释下为什么鹿晗发布恋情的时候，微博系统会崩溃，如何解决？]()
