@@ -154,14 +154,25 @@
 
 - [new与malloc的区别以及实现方法](https://github.com/oscarwin/interview/blob/master/doc/new与malloc的区别以及实现方法.md)
 
+- [多态与虚函数表](https://github.com/oscarwin/interview/blob/master/doc/多态与虚函数表.md)
+
 ## 系统设计题
 
 - [请解释下为什么鹿晗发布恋情的时候，微博系统会崩溃，如何解决？](https://github.com/oscarwin/interview/blob/master/doc/请解释下为什么鹿晗发布恋情的时候，微博系统会崩溃，如何解决？.md)
 - [如何避免向用户重复推送同一篇文章？]()
 - [微信扫码登录实现？]
 
-## 算法题
+## 数据结构与算法
 
 - 两个单向链表求和
 - 给定一个二叉树，返回二叉树每层最左的值
 - 有一副扑克牌，按照如下规则把它堆放在桌上。(1) 拿出最上面一张放在桌上，(2) 接来下的一张放到扑克牌的最下面，(3) 重复过程1和2，直到牌发完。先已经桌上手牌的顺序，求扑克牌原来的顺序
+- 两数之和
+- 求二叉树任意两节点的最长距离
+- [什么是满二叉树？什么是完全二叉树？](https://www.jianshu.com/p/ac95b5a7de8b)
+
+## 智力题
+
+- [两根不均匀的香1小时烧完，怎么得到15分钟？](https://github.com/oscarwin/interview/blob/master/doc/两根不均匀的香1小时烧完，怎么得到15分钟？.md)
+
+- [在一个房间内有三盏灯，三个开关在门外，门外看不到门内的情况，你只能进房间一次，你会怎么样判断出哪一个开关控制哪盏灯？]
