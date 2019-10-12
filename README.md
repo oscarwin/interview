@@ -144,6 +144,8 @@
 
 - [什么是缓存击穿？什么是缓存穿透？热点数据缓存？]
 
+- [什么是一致性哈希？有什么作用？](https://blog.csdn.net/cywosp/article/details/23397179)
+
 ## 语言
 
 ### Python
